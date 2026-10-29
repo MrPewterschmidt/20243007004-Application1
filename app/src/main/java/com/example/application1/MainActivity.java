@@ -9,24 +9,40 @@ import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 import android.view.View;
 import android.widget.Toast;
+import android.content.Intent;
 
 public class MainActivity extends AppCompatActivity {
 
     public void facilitiesClicked(View view) {
-        Toast.makeText(this, "Facilities clicked", Toast.LENGTH_SHORT).show();
+        openDetail(0);
     }
 
     public void eventsClicked(View view) {
-        Toast.makeText(this, "Events clicked", Toast.LENGTH_SHORT).show();
+        openDetail(1);
     }
 
     public void clubsClicked(View view) {
-        Toast.makeText(this, "Clubs clicked", Toast.LENGTH_SHORT).show();
+        openDetail(2);
     }
 
     public void supportClicked(View view) {
-        Toast.makeText(this, "Support clicked", Toast.LENGTH_SHORT).show();
+        openDetail(3);
     }
+
+    private void openDetail(int topicIndex) {
+        Intent intent = new Intent(
+                MainActivity.this,
+                DetailActivity.class
+        );
+
+        intent.putExtra(
+                DetailActivity.EXTRA_TOPIC_INDEX,
+                topicIndex
+        );
+
+        startActivity(intent);
+    }
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
