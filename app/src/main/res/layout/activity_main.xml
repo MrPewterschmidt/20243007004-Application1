@@ -50,8 +50,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="0dp"
                     android:layout_weight="1"
-                    android:background="#D3D3D3"
-                    android:contentDescription="@string/facilities"
+                    android:background="@drawable/button_selector"                    android:contentDescription="@string/facilities"
                     android:scaleType="centerInside"
                     android:src="@drawable/img_btn_facilities" />
 
@@ -74,8 +73,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="0dp"
                     android:layout_weight="1"
-                    android:background="#D3D3D3"
-                    android:contentDescription="@string/events"
+                    android:background="@drawable/button_selector"                    android:contentDescription="@string/events"
                     android:scaleType="centerInside"
                     android:src="@drawable/img_btn_events" />
 
@@ -106,8 +104,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="0dp"
                     android:layout_weight="1"
-                    android:background="#D3D3D3"
-                    android:contentDescription="@string/clubs"
+                    android:background="@drawable/button_selector"                    android:contentDescription="@string/clubs"
                     android:scaleType="centerInside"
                     android:src="@drawable/img_btn_clubs" />
 
@@ -130,8 +127,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="0dp"
                     android:layout_weight="1"
-                    android:background="#D3D3D3"
-                    android:contentDescription="@string/support"
+                    android:background="@drawable/button_selector"                    android:contentDescription="@string/support"
                     android:scaleType="centerInside"
                     android:src="@drawable/img_btn_support" />
 
