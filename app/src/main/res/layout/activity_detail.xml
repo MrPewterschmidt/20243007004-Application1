@@ -5,11 +5,13 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
+    <!-- Header section containing the campus banner and selected category -->
     <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1">
 
+        <!-- Campus banner used as the background image -->
         <ImageView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -17,11 +19,13 @@
             android:scaleType="centerCrop"
             android:src="@drawable/img_main_banner" />
 
+        <!-- Semi-transparent overlay to improve icon and text readability -->
         <View
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:background="#66000000" />
 
+        <!-- Displays the selected topic icon and category name -->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -29,6 +33,7 @@
             android:orientation="horizontal"
             android:padding="16dp">
 
+            <!-- Topic image updated dynamically in DetailActivity -->
             <ImageView
                 android:id="@+id/detailImage"
                 android:layout_width="0dp"
@@ -38,6 +43,7 @@
                 android:scaleType="centerInside"
                 android:src="@drawable/img_btn_facilities" />
 
+            <!-- Topic name updated dynamically in DetailActivity -->
             <TextView
                 android:id="@+id/detailCategory"
                 android:layout_width="0dp"
@@ -52,18 +58,21 @@
 
     </FrameLayout>
 
+    <!-- Scrollable section containing the selected topic details -->
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="2"
         android:fillViewport="true">
 
+        <!-- Holds the title and detailed content vertically -->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
             android:padding="16dp">
 
+            <!-- Placeholder title replaced with array data at runtime -->
             <TextView
                 android:id="@+id/detailTitle"
                 android:layout_width="match_parent"
@@ -71,6 +80,7 @@
                 android:text="This is a title"
                 android:textAppearance="?android:attr/textAppearanceLarge" />
 
+            <!-- Placeholder content replaced with array data at runtime -->
             <TextView
                 android:id="@+id/detailContent"
                 android:layout_width="match_parent"

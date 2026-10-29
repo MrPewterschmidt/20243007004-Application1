@@ -5,11 +5,13 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
+    <!-- Header banner shown at the top of the main screen -->
     <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1">
 
+        <!-- Campus image used as the banner background -->
         <ImageView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -17,6 +19,7 @@
             android:scaleType="centerCrop"
             android:src="@drawable/img_main_banner" />
 
+        <!-- Welcome message displayed over the banner image -->
         <TextView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -28,18 +31,24 @@
 
     </FrameLayout>
 
+    <!--
+        Landscape category area.
+        All four categories are displayed in one horizontal row.
+    -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
         android:orientation="horizontal">
 
+        <!-- Facilities category -->
         <LinearLayout
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:orientation="vertical">
 
+            <!-- Opens DetailActivity for the Facilities topic -->
             <ImageButton
                 android:id="@+id/buttonFacilities"
                 android:layout_width="match_parent"
@@ -51,6 +60,7 @@
                 android:scaleType="centerInside"
                 android:src="@drawable/img_btn_facilities" />
 
+            <!-- Label for the Facilities button -->
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -59,12 +69,14 @@
 
         </LinearLayout>
 
+        <!-- Events category -->
         <LinearLayout
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:orientation="vertical">
 
+            <!-- Opens DetailActivity for the Events topic -->
             <ImageButton
                 android:id="@+id/buttonEvents"
                 android:layout_width="match_parent"
@@ -76,6 +88,7 @@
                 android:scaleType="centerInside"
                 android:src="@drawable/img_btn_events" />
 
+            <!-- Label for the Events button -->
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -84,12 +97,14 @@
 
         </LinearLayout>
 
+        <!-- Clubs category -->
         <LinearLayout
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:orientation="vertical">
 
+            <!-- Opens DetailActivity for the Clubs topic -->
             <ImageButton
                 android:id="@+id/buttonClubs"
                 android:layout_width="match_parent"
@@ -101,6 +116,7 @@
                 android:scaleType="centerInside"
                 android:src="@drawable/img_btn_clubs" />
 
+            <!-- Label for the Clubs button -->
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -109,12 +125,14 @@
 
         </LinearLayout>
 
+        <!-- Support category -->
         <LinearLayout
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:orientation="vertical">
 
+            <!-- Opens DetailActivity for the Support topic -->
             <ImageButton
                 android:id="@+id/buttonSupport"
                 android:layout_width="match_parent"
@@ -126,6 +144,7 @@
                 android:scaleType="centerInside"
                 android:src="@drawable/img_btn_support" />
 
+            <!-- Label for the Support button -->
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
